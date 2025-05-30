@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Meatland</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Add Google Fonts for better multilingual support -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Persian Meat Market Logo">
+                <div class="logo-text">
+                    <h1 data-i18n="persian_meat_market">Persian Meat Market</h1>
+                    <p data-i18n="tagline">Premium Butcher Shop</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" data-i18n="home">Home</a></li>
+                    <li><a href="products.html" class="active" data-i18n="products">Our Products</a></li>
+                    <li><a href="contact.html" data-i18n="contact">Contact Us</a></li>
+                    <li class="language-selector">
+                        <select id="language-switcher">
+                            <option value="en">English</option>
+                            <option value="fa">فارسی</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2 data-i18n="our_products">Our Products</h2>
+            <p data-i18n="products_subtitle">Quality meats for every occasion</p>
+        </div>
+    </section>
+
+    <section class="product-categories">
+        <div class="container">
+            <div class="category-nav">
+                <button class="category-btn active" data-category="all" data-i18n="all_products">All Products</button>
+                <button class="category-btn" data-category="beef" data-i18n="beef">Beef</button>
+                <button class="category-btn" data-category="poultry" data-i18n="poultry">Poultry</button>
+                <button class="category-btn" data-category="lamb" data-i18n="lamb_category">Lamb</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-list">
+        <div class="container">
+            <div class="product-grid">
+                <!-- Beef Products -->
+                <div class="product" data-category="beef">
+                    <div class="product-gallery" data-product-id="ribeye">
+                        <img src="images/products/meat/prime-ribeye-steak.png" alt="Prime Ribeye Steak">
+                    </div>
+                    <h3 data-i18n="ribeye">Prime Ribeye Steak</h3>
+                    <p data-i18n="ribeye_desc">Premium cut with excellent marbling</p>
+                </div>
+                <div class="product" data-category="beef">
+                    <div class="product-gallery" data-product-id="filet-mignon">
+                        <img src="images/products/meat/filet_mignon.png" alt="Filet Mignon">
+                    </div>
+                    <h3 data-i18n="filet_mignon">Filet Mignon</h3>
+                    <p data-i18n="filet_mignon_desc">Tender and lean premium cut</p>
+                </div>
+                <div class="product" data-category="beef">
+                    <div class="product-gallery" data-product-id="ny-strip">
+                        <img src="images/products/meat/new_york_strip.png" alt="New York Strip">
+                    </div>
+                    <h3 data-i18n="ny_strip">New York Strip</h3>
+                    <p data-i18n="ny_strip_desc">Well-marbled with a robust flavor</p>
+                </div>
+                <div class="product" data-category="beef">
+                    <div class="product-gallery" data-product-id="ground-beef">
+                        <img src="images/products/meat/ground-beef.png" alt="Ground Beef">
+                        <img src="images/products/meat/ground-beef.jpg" alt="Ground Beef - Alternative View">
+                    </div>
+                    <h3 data-i18n="ground_beef">Ground Beef</h3>
+                    <p data-i18n="ground_beef_desc">80/20 premium ground beef</p>
+                </div>
+                <div class="product" data-category="beef">
+                    <div class="product-gallery" data-product-id="beef-stew">
+                        <img src="images/products/meat/stew_meat.png" alt="Stew Meat">
+                    </div>
+                    <h3 data-i18n="stew_meat">Stew Meat</h3>
+                    <p data-i18n="stew_meat_desc">Perfect for slow cooking and stews</p>
+                </div>
+
+                <!-- Poultry Products -->
+                <div class="product" data-category="poultry">
+                    <div class="product-gallery" data-product-id="chicken-breast">
+                        <img src="images/products/chicken/chicken-breast.png" alt="Organic Chicken Breast">
+                    </div>
+                    <h3 data-i18n="chicken">Organic Chicken Breast</h3>
+                    <p data-i18n="chicken_desc">Free-range, hormone-free chicken</p>
+                </div>
+                <div class="product" data-category="poultry">
+                    <div class="product-gallery" data-product-id="whole-chicken">
+                        <img src="images/products/chicken/whole-chicken.png" alt="Whole Chicken">
+                    </div>
+                    <h3 data-i18n="whole_chicken">Whole Chicken</h3>
+                    <p data-i18n="whole_chicken_desc">Farm-raised, all-natural</p>
+                </div>
+
+
+                <!-- Lamb Products -->
+                <div class="product" data-category="lamb">
+                    <div class="product-gallery" data-product-id="lamb-chops">
+                        <img src="images/products/lamb/lamb-chops.png" alt="Lamb Chops">
+                    </div>
+                    <h3 data-i18n="lamb">Lamb Chops</h3>
+                    <p data-i18n="lamb_desc">Tender and flavorful premium lamb</p>
+                </div>
+                <div class="product" data-category="lamb">
+                    <div class="product-gallery" data-product-id="lamb-leg">
+                        <img src="images/products/lamb/lamb-leg.png" alt="Leg of Lamb">
+                    </div>
+                    <h3 data-i18n="leg_of_lamb">Leg of Lamb</h3>
+                    <p data-i18n="leg_of_lamb_desc">Perfect for roasting</p>
+                </div>
+                <div class="product" data-category="lamb">
+                    <div class="product-gallery" data-product-id="lamb-shank">
+                        <img src="images/products/lamb/lamb-shank.png" alt="Lamb Shank">
+                    </div>
+                    <h3 data-i18n="lamb_shank">Lamb Shank</h3>
+                    <p data-i18n="lamb_shank_desc">Rich and flavorful, perfect for braising</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="custom-orders">
+        <div class="container">
+            <h2 data-i18n="custom_orders">Custom Orders</h2>
+            <p data-i18n="custom_orders_desc">Don't see what you're looking for? We offer custom cuts and special orders. Contact us for more information.</p>
+            <a href="contact.html" class="btn" data-i18n="contact">Contact Us</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-i18n="persian_meat_market">Persian Meat Market</h3>
+                    <p data-i18n="footer_description">Your premium butcher shop for quality meats and exceptional service.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i>1827 Lonsdale Ave, North Vancouver</p>
+                    <p><i class="fas fa-phone"></i> (236) 551-2111</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p data-i18n="copyright">&copy; 2025 Persian Meat Market. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
